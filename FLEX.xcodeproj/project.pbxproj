@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40651D8DD3E4181830F385F /* libPods-FLEX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0861AD2FC94514B0B11C11 /* libPods-FLEX.a */; };
 		C5B63979198A1956009270B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B63978198A1956009270B6 /* Foundation.framework */; };
 		C5B6397B198A1956009270B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B6397A198A1956009270B6 /* UIKit.framework */; };
 		C5B63986198A1956009270B6 /* FLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B63985198A1956009270B6 /* FLEX.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6173AF44891F42ED838FCB11 /* Pods-FLEX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FLEX.xcconfig"; path = "Pods/Pods-FLEX.xcconfig"; sourceTree = "<group>"; };
 		C5B63975198A1956009270B6 /* libFLEX.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libFLEX.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B63978198A1956009270B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C5B6397A198A1956009270B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -23,6 +25,7 @@
 		C5B63984198A1956009270B6 /* FLEX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLEX.h; sourceTree = "<group>"; };
 		C5B63985198A1956009270B6 /* FLEX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLEX.m; sourceTree = "<group>"; };
 		C5B63989198A1956009270B6 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/lib/0xdeadfa11; sourceTree = "<group>"; };
+		EF0861AD2FC94514B0B11C11 /* libPods-FLEX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FLEX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +35,7 @@
 			files = (
 				C5B63979198A1956009270B6 /* Foundation.framework in Frameworks */,
 				C5B6397B198A1956009270B6 /* UIKit.framework in Frameworks */,
+				A40651D8DD3E4181830F385F /* libPods-FLEX.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +48,7 @@
 				C5B6397C198A1956009270B6 /* FLEX */,
 				C5B63977198A1956009270B6 /* Frameworks */,
 				C5B63976198A1956009270B6 /* Products */,
+				6173AF44891F42ED838FCB11 /* Pods-FLEX.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +65,7 @@
 			children = (
 				C5B63978198A1956009270B6 /* Foundation.framework */,
 				C5B6397A198A1956009270B6 /* UIKit.framework */,
+				EF0861AD2FC94514B0B11C11 /* libPods-FLEX.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,10 +141,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5B6398C198A1956009270B6 /* Build configuration list for PBXNativeTarget "FLEX" */;
 			buildPhases = (
+				7AFA641A3C5F4BB6B264C1ED /* Check Pods Manifest.lock */,
 				C5B63970198A1956009270B6 /* Sources */,
 				C5B63971198A1956009270B6 /* Frameworks */,
 				C5B63972198A1956009270B6 /* Headers */,
 				C5B63973198A1956009270B6 /* ShellScript */,
+				E394F381F1B44CCDAC3772D2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -175,6 +183,21 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7AFA641A3C5F4BB6B264C1ED /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		C5B63973198A1956009270B6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,6 +210,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+		E394F381F1B44CCDAC3772D2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-FLEX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -260,8 +298,9 @@
 		};
 		C5B6398D198A1956009270B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6173AF44891F42ED838FCB11 /* Pods-FLEX.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xiangyu Lin (4ZQM3C2WND)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
@@ -281,8 +320,9 @@
 		};
 		C5B6398E198A1956009270B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6173AF44891F42ED838FCB11 /* Pods-FLEX.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xiangyu Lin (4ZQM3C2WND)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
@@ -319,6 +359,7 @@
 				C5B6398E198A1956009270B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

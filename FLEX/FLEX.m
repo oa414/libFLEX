@@ -7,16 +7,36 @@
 //
 
 #import "FLEX.h"
+#import <UIKit/UIKit.h>
+#import <FLEX/FLEXManager.h>
 
 @implementation FLEX
 
--(id)init
+- (id)init
 {
-	if ((self = [super init]))
-	{
-	}
+    self = [super init];
+    if (self) {
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(appLaunched:)
+                                                     name:UIApplicationDidBecomeActiveNotification
+                                                   object:nil];
+    }
+    return self;
+}
+
+- (void)appLaunched:(NSNotification *)notification
+{
+    NSLog(@"======================= libFlex dylib show ========================");
     
-	return self;
+    [[FLEXManager sharedManager] showExplorer];
 }
 
 @end
+
+static void __attribute__((constructor)) initialize(void)
+{
+    NSLog(@"======================= libFlex dylib initialize ========================");
+    
+    static FLEX *entrance;
+    entrance = [[FLEX alloc] init];
+}
