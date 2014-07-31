@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5B63979198A1956009270B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B63978198A1956009270B6 /* Foundation.framework */; };
+		C5B6397B198A1956009270B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B6397A198A1956009270B6 /* UIKit.framework */; };
+		C5B63986198A1956009270B6 /* FLEX.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B63985198A1956009270B6 /* FLEX.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C5B63975198A1956009270B6 /* libFLEX.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libFLEX.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5B63978198A1956009270B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C5B6397A198A1956009270B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C5B6397F198A1956009270B6 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		C5B63980198A1956009270B6 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		C5B63982198A1956009270B6 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		C5B63983198A1956009270B6 /* FLEX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FLEX-Prefix.pch"; sourceTree = "<group>"; };
+		C5B63984198A1956009270B6 /* FLEX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLEX.h; sourceTree = "<group>"; };
+		C5B63985198A1956009270B6 /* FLEX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLEX.m; sourceTree = "<group>"; };
+		C5B63989198A1956009270B6 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/lib/0xdeadfa11; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5B63971198A1956009270B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5B63979198A1956009270B6 /* Foundation.framework in Frameworks */,
+				C5B6397B198A1956009270B6 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5B6396B198A1956009270B6 = {
+			isa = PBXGroup;
+			children = (
+				C5B6397C198A1956009270B6 /* FLEX */,
+				C5B63977198A1956009270B6 /* Frameworks */,
+				C5B63976198A1956009270B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5B63976198A1956009270B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5B63975198A1956009270B6 /* libFLEX.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5B63977198A1956009270B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5B63978198A1956009270B6 /* Foundation.framework */,
+				C5B6397A198A1956009270B6 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5B6397C198A1956009270B6 /* FLEX */ = {
+			isa = PBXGroup;
+			children = (
+				C5B63984198A1956009270B6 /* FLEX.h */,
+				C5B63985198A1956009270B6 /* FLEX.m */,
+				C5B6397D198A1956009270B6 /* Package */,
+				C5B63981198A1956009270B6 /* Supporting Files */,
+			);
+			path = FLEX;
+			sourceTree = "<group>";
+		};
+		C5B6397D198A1956009270B6 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				C5B6397E198A1956009270B6 /* DEBIAN */,
+				C5B63987198A1956009270B6 /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		C5B6397E198A1956009270B6 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				C5B6397F198A1956009270B6 /* control.txt */,
+				C5B63980198A1956009270B6 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		C5B63981198A1956009270B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5B63982198A1956009270B6 /* PackageVersion.plist */,
+				C5B63983198A1956009270B6 /* FLEX-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C5B63987198A1956009270B6 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				C5B63988198A1956009270B6 /* lib */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		C5B63988198A1956009270B6 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				C5B63989198A1956009270B6 /* 0xdeadfa11 */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C5B63972198A1956009270B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C5B63974198A1956009270B6 /* FLEX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5B6398C198A1956009270B6 /* Build configuration list for PBXNativeTarget "FLEX" */;
+			buildPhases = (
+				C5B63970198A1956009270B6 /* Sources */,
+				C5B63971198A1956009270B6 /* Frameworks */,
+				C5B63972198A1956009270B6 /* Headers */,
+				C5B63973198A1956009270B6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLEX;
+			productName = FLEX;
+			productReference = C5B63975198A1956009270B6 /* libFLEX.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5B6396C198A1956009270B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = C5B6396F198A1956009270B6 /* Build configuration list for PBXProject "FLEX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C5B6396B198A1956009270B6;
+			productRefGroup = C5B63976198A1956009270B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5B63974198A1956009270B6 /* FLEX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C5B63973198A1956009270B6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5B63970198A1956009270B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5B63986198A1956009270B6 /* FLEX.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C5B6398A198A1956009270B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		C5B6398B198A1956009270B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		C5B6398D198A1956009270B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FLEX/FLEX-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		C5B6398E198A1956009270B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FLEX/FLEX-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5B6396F198A1956009270B6 /* Build configuration list for PBXProject "FLEX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5B6398A198A1956009270B6 /* Debug */,
+				C5B6398B198A1956009270B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5B6398C198A1956009270B6 /* Build configuration list for PBXNativeTarget "FLEX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5B6398D198A1956009270B6 /* Debug */,
+				C5B6398E198A1956009270B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5B6396C198A1956009270B6 /* Project object */;
+}
